@@ -2,28 +2,18 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
-  const App() [data, setdata] = useState('');
+  const [data, setData] = useState('');
 
 useEffect(() => {
-  fetch('http://localhost:500')
-});
+  fetch('http://localhost:5000')
+  .then(response => response.text())
+  .then(data => setData(data))
+  .catch(error => console.error('error:', error));
+}, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="text">
+      <h1>{data}</h1>
     </div>
   );
 }
