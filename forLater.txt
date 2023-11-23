@@ -1,0 +1,74 @@
+just to remember {
+    git remote add origin Link
+    git push -u origin main
+}
+
+for later 1 {
+import React, { useState, useEffect } from 'react';
+import './App.css';
+
+function App() {
+  const [data, setData] = useState('');
+
+useEffect(() => {
+  fetch('http://localhost:5000')
+  .then(response => response.text())
+  .then(data => setData(data))
+  .catch(error => console.error('error:', error));
+}, []);
+
+  return (
+    <div className="text">
+      <h1>{data}</h1>
+    </div>
+  );
+}
+
+export default App;
+// to keep in mind 
+// part 2
+const express = require('express');
+const cors = require('cors');
+const app = express();
+const port = 5000;
+
+app.use(cors());
+
+app.get('/', (req, res) => {
+    res.send('hello Lee Cash it\'s good this works');
+}).listen(port, () => {
+    console.log('server has started runing on port 5000');
+});
+}
+for later 2 {
+import React, { useState, useEffect } from 'react';
+import './App.css';
+
+function App() {
+  const [data, setData] = useState('');
+  const testName = 'check the server port 5000';
+  var testForNull = null;
+
+useEffect(() => {
+  fetch('http://localhost:5000')
+  .then(response => response.text())
+  .then(data => setData(data))
+  .catch(error => console.error('error:', error));
+});
+
+  return (
+    <div className="text">
+      {testForNull ? (
+        <>
+          test
+        </>
+      ) : (
+        <h1>{ null ? testName : data }</h1>
+      )}
+    </div>
+  );
+}
+
+export default App;
+
+}
