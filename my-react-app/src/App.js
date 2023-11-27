@@ -14,14 +14,19 @@ useEffect(() => {
 });
 
   return (
-    <div className="text">
-      {testForNull ? (
-        <>
-          test
-        </>
-      ) : (
-        <h1>{ null ? testName : data }</h1>
-      )}
+    <div className="overManinAll">
+     <div className="mainAll">
+      <div className="mainAll-tabBarDiv">
+       <ol className="mainAll-tabBarDiv-orderList">
+        <li className="mainAll-tabBarDiv-orderList-tab1">About Me</li>
+        <li className="mainAll-tabBarDiv-orderList-tab2">My work sample</li>
+        <li className="mainAll-tabBarDiv-orderList-tab3">Contact me</li>
+       </ol>
+      </div>
+      <div className="mainAll-content1">
+       <h1>Hello, I'm Lee Cash you can get to know me better by clicking either about me, my work sample,</h1>
+      </div>
+     </div>
     </div>
   );
 }
