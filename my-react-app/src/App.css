@@ -1,4 +1,13 @@
-.text {
-  color: blue;
-  size: 1%;
+.mainAll-tabBarDiv-orderList {
+  display:grid;
+  grid-template-columns: 20% 20% 20%;
+  outline: 1%;
+}
+
+.mainAll-content1 {
+  color:white
+}
+
+.overManinAll {
+  background-color: black;
 }
