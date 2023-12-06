@@ -15,12 +15,17 @@ function App() {
     }
   };
 
-useEffect(() => {
+  function mainAllContent2Load() {
+    const mainAllContent2 = document.getElementById("mainAll-content2").mainAllContent2.remove();
+    alert('hellooooo');
+  }
+
+/*useEffect(() => {
   fetch('http://localhost:5000')
   .then(response => response.text())
   .then(data => setData(data))
   .catch(error => console.error('error:', error));
-});
+});*/
 
   return (
     <div className="overManinAll">
@@ -32,8 +37,13 @@ useEffect(() => {
         <button className="mainAll-tabBarDiv-orderList-tab3">Contact me</button>
        </ol>
       </div>
-      <div className="mainAll-content1">
+      <div className="mainAll-content1" id="mainAll-content1">
        <h1 className="mainAll-content1-h11">Hello, I'm Lee Cash you can get to know me better by clicking about me, my work sample or contact me.</h1>
+      </div>
+      <div className="mainAll-content2" id="mainAll-content2" onload={mainAllContent2Load()}>
+        <p className="mainAll-content2-name">Name:</p>
+        <p className="mainAll-content2-age">age:</p>
+        <p className="mainAll-content2-education">education:</p>
       </div>
      </div>
     </div>
