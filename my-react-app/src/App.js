@@ -5,6 +5,15 @@ function App() {
   const [data, setData] = useState('');
   const testName = 'check the server port 5000';
   var testForNull = null;
+  var startPage = true;
+  var tab1p2 = false;
+  var tab2p2 = false;
+  var tab3p2 = false;
+  function tab1() {
+    if(startPage === true && tab1p2 === false && tab2p2 === false && tab3p2 === false) {
+      alert('what is up?');
+    }
+  };
 
 useEffect(() => {
   fetch('http://localhost:5000')
@@ -18,16 +27,13 @@ useEffect(() => {
      <div className="mainAll">
       <div className="mainAll-tabBarDiv">
        <ol className="mainAll-tabBarDiv-orderList">
-        <button className="mainAll-tabBarDiv-orderList-tab1">About Me</button>
+        <button onClick={tab1} className="mainAll-tabBarDiv-orderList-tab1">About Me</button>
         <button className="mainAll-tabBarDiv-orderList-tab2">My work sample</button>
         <button className="mainAll-tabBarDiv-orderList-tab3">Contact me</button>
        </ol>
       </div>
       <div className="mainAll-content1">
-       <h1>Hello, I'm Lee Cash you can get to know me better by clicking about me, my work sample or contact me.</h1>
-       <script>
-       alert('this website is under development and my have some problems, you can report these problems to leecash133@gmail.com');
-       </script>
+       <h1 className="mainAll-content1-h11">Hello, I'm Lee Cash you can get to know me better by clicking about me, my work sample or contact me.</h1>
       </div>
      </div>
     </div>

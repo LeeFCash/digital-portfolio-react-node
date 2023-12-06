@@ -1,13 +1,43 @@
 .mainAll-tabBarDiv-orderList {
   display:grid;
-  grid-template-columns: 20% 20% 20%;
+  grid-template-columns: 10% 10% 10%;
+  gap: 35% 33%;
   outline: 1%;
+  outline-color: white;
+}
+
+body {
+  background-color: black;
 }
 
 .mainAll-content1 {
-  color:white
+  color:white;
 }
 
 .overManinAll {
+  margin-top: -8px;
   background-color: black;
+  color: white;
+}
+
+.mainAll-tabBarDiv-orderList-tab1 {
+  margin-top: 10%;
+  height: 75%;
+  background-color: white;
+  color: black;
+}
+
+.mainAll-tabBarDiv-orderList-tab2 {
+  margin-top: 10%;
+  height: 75%;
+  background-color: white;
+  color: black;
+}
+
+.mainAll-tabBarDiv-orderList-tab3 {
+  margin-top: 10%;
+  height: 75%;
+  background-color: white;
+  color: black;
+
 }
