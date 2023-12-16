@@ -4,15 +4,40 @@ import './App.css';
 function App() {
   const [data, setData] = useState('');
   const testName = 'check the server port 5000';
-  var testForNull = null;
-  var startPage = true;
+  var startPage1 = document.getElementById('');
+  var aboutMeContent = document.getElementById('');
+  var workSamples = document.getElementById('');
+  var contactMe = document.getElementById('');
+  var startPage1p2 = true;
   var tab1p2 = false;
   var tab2p2 = false;
   var tab3p2 = false;
   function tab1() {
-    if(startPage === true && tab1p2 === false && tab2p2 === false && tab3p2 === false) {
-      alert('what is up?');
-    }
+    if(tab1p2 === false && tab2p2 === false && tab3p2 === false && startPage1p2 === true) {
+      startPage1.remove();
+      workSamples.remove();
+      contactMe.remove();
+      mainContent.appendChild(aboutMeContent);
+      tab1p2 = true;
+      startPagep2 = false;
+      } else if(tab1p2 === false && tab2p2 === false && tab3p2 === true && startPagep2 === false){
+          startPage1.remove();
+          workSamples.remove();
+          contactMe.remove();
+          mainContent.appendChild(aboutMeContent);
+          tab1p2 = true;
+          tab3p2 = false
+      } else if(tab1p2 === false && tab2p2 === true && tab3p2 === false && startPagep2 === false) {
+          startPage1.remove();
+          workSamples.remove();
+          contactMe.remove();
+          mainContent.appendChild(aboutMeContent);
+          tab1p2 = true;
+          tab2p2 = false
+      } else if(tab1p2 === true && tab2p2 === false && tab3p2 === false && startPagep2 === false) {
+          alert('This tab is already open.');
+      } else {
+          alert('Something unexpected happen.');
   };
 
   function mainAllContent2Load() {
@@ -37,13 +62,20 @@ function App() {
         <button className="mainAll-tabBarDiv-orderList-tab3">Contact me</button>
        </ol>
       </div>
-      <div className="mainAll-content1" id="mainAll-content1">
+      <div className="mainAll-overAllContent"></div>
+      <div className="mainAll-content1" id="mainAll-overAllContent-content1">
        <h1 className="mainAll-content1-h11">Hello, I'm Lee Cash you can get to know me better by clicking about me, my work sample or contact me.</h1>
       </div>
-      <div className="mainAll-content2" id="mainAll-content2" onload={mainAllContent2Load()}>
-        <p className="mainAll-content2-name">Name:</p>
-        <p className="mainAll-content2-age">age:</p>
-        <p className="mainAll-content2-education">education:</p>
+      <div className="mainAll-overAllContent-content2" id="mainAll-content2" >
+        <p className="mainAll-overAllContent-content2-name">Name:</p>
+        <p className="mainAll-overAllContent-content2-age">age:</p>
+        <p className="mainAll-overAllContent-content2-education">education:</p>
+      </div>
+      <div className="mainAll-overAllContent-content3" id="mainAll-overAllContent-content3">
+        <p>tab2</p>
+      </div>
+      <div className="mainAll-overAllContent-content4" id="mainAll-overAllContent-content3">
+        <p>tab3</p>
       </div>
      </div>
     </div>
