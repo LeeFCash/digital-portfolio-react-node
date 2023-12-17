@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+//import { useState } from 'react';
 import './App.css';
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
   var tab2p2 = false;
   var tab3p2 = false;
   function tab1() {
-    if(tab1p2 === false && tab2p2 === false && tab3p2 === false && startPage1p2 === true) {
+    /*if(tab1p2 === false && tab2p2 === false && tab3p2 === false && startPage1p2 === true) {
       startPage1.remove();
       workSamples.remove();
       contactMe.remove();
@@ -39,7 +40,22 @@ function App() {
           alert('This tab is already open.');
       } else {
           alert('Something unexpected happen.');
-      };
+      };*/
+
+      if(tab1p2 === false && tab2p2 === false && tab3p2 === false && startPage1p2 === true) {
+        tab1p2 = true;
+        startPage1p2 = false;
+        } else if(tab1p2 === false && tab2p2 === false && tab3p2 === true && startPage1p2 === false){
+            tab1p2 = true;
+            tab3p2 = false
+        } else if(tab1p2 === false && tab2p2 === true && tab3p2 === false && startPage1p2 === false) {
+            tab1p2 = true;
+            tab2p2 = false
+        } else if(tab1p2 === true && tab2p2 === false && tab3p2 === false && startPage1p2 === false) {
+            alert('This tab is already open.');
+        } else {
+            alert('Something unexpected happen.');
+        };
       return tab1p2, tab1p2, tab1p2, startPage1p2;
   };
 
@@ -66,20 +82,41 @@ function App() {
         <button className="mainAll-tabBarDiv-orderList-tab3">Contact me</button>
        </ol>
       </div>
-      <div className="mainAll-overAllContent"></div>
-      <div className="mainAll-content1" id="mainAll-overAllContent-content1">
-       <h1 className="mainAll-content1-h11">Hello, I'm Lee Cash you can get to know me better by clicking about me, my work sample or contact me.</h1>
-      </div>
-      <div className="mainAll-overAllContent-content2" id="mainAll-overAllContent-content2" >
-        <p className="mainAll-overAllContent-content2-name">Name:</p>
-        <p className="mainAll-overAllContent-content2-age">age:</p>
-        <p className="mainAll-overAllContent-content2-education">education:</p>
-      </div>
-      <div className="mainAll-overAllContent-content3" id="mainAll-overAllContent-content3">
-        <p>tab2</p>
-      </div>
-      <div className="mainAll-overAllContent-content4" id="mainAll-overAllContent-content3">
-        <p>tab3</p>
+      <div className="mainAll-overAllContent">
+      {startPage1p2 ? (
+      <><div className="mainAll-content1" id="mainAll-overAllContent-content1">
+        <h1 className="mainAll-content1-h11">Hello, I'm Lee Cash you can get to know me better by clicking about me, my work sample or contact me.</h1>
+       </div>
+       </>
+       ): (
+        <></>
+       )}
+       {tab1p2 ? (
+       <><div className="mainAll-overAllContent-content2" id="mainAll-overAllContent-content2" >
+         <p className="mainAll-overAllContent-content2-name">Name:</p>
+         <p className="mainAll-overAllContent-content2-age">age:</p>
+         <p className="mainAll-overAllContent-content2-education">education:</p>
+       </div>
+       </>
+       ): (
+        <></>
+       )}
+       {tab2p2 ? (
+       <><div className="mainAll-overAllContent-content3" id="mainAll-overAllContent-content3">
+         <p>tab2</p>
+       </div>
+       </>
+       ): (
+        <></>
+       )}
+       {tab3p2 ? (
+       <><div className="mainAll-overAllContent-content4" id="mainAll-overAllContent-content3">
+         <p>tab3</p>
+       </div>
+       </>
+       ): (
+        <></>
+       )}
       </div>
      </div>
     </div>
