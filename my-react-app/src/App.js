@@ -6,15 +6,6 @@ function App() {
   const [data, setData] = useState('');
   const [tab, setTab] = useState(0);
   const testName = 'check the server port 5000';
-  var mainAllOverAllContent = document.getElementById('mainAll-overAllContent');
-  var startPage1 = document.getElementById('mainAll-overAllContent-content1');
-  var aboutMeContent = document.getElementById('mainAll-overAllContent-content2');
-  var workSamples = document.getElementById('mainAll-overAllContent-content3');
-  var contactMe = document.getElementById('mainAll-overAllContent-content4');
-  var startPage1p2 = true;
-  var tab1p2 = false;
-  var tab2p2 = false;
-  var tab3p2 = false;
   function tab1() {
     setTab(1);
   };
@@ -24,12 +15,6 @@ function App() {
   function tab3() {
     setTab(3);
   };
-
-  function initialLoad() {
-    aboutMeContent.remove();
-    workSamples.remove();
-    contactMe.remove();
-  }
 
 /*useEffect(() => {
   fetch('http://localhost:5000')
