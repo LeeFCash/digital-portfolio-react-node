@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-//import { useState } from 'react';
+import MeIMG from './IMG/MeIMG.jpg'
 import './App.css';
 
 function App() {
@@ -34,18 +34,19 @@ function App() {
        </ol>
       </div>
       <div className="mainAll-overAllContent">
-       <div className="mainAll-content1" id="mainAll-overAllContent-content1" hidden={tab != 0}>
+       <div className="mainAll-content1" id="mainAll-overAllContent-content1" hidden={tab !== 0}>
         <h1 className="mainAll-content1-h11">Hello, I'm Lee Cash you can get to know me better by clicking about me, my work sample or contact me.</h1>
        </div>
-       <div className="mainAll-overAllContent-content2" id="mainAll-overAllContent-content2" hidden={tab != 1}>
+       <div className="mainAll-overAllContent-content2" id="mainAll-overAllContent-content2" hidden={tab !== 1}>
+         <img src={MeIMG} alt="error" className="mainAll-overAllContent-content2-meIMG"/>
          <p className="mainAll-overAllContent-content2-name">Name:</p>
          <p className="mainAll-overAllContent-content2-age">age:</p>
          <p className="mainAll-overAllContent-content2-education">education:</p>
        </div>
-       <div className="mainAll-overAllContent-content3" id="mainAll-overAllContent-content3" hidden={tab != 2}>
+       <div className="mainAll-overAllContent-content3" id="mainAll-overAllContent-content3" hidden={tab !== 2}>
          <p>tab2</p>
        </div>
-       <div className="mainAll-overAllContent-content4" id="mainAll-overAllContent-content3" hidden={tab != 3}>
+       <div className="mainAll-overAllContent-content4" id="mainAll-overAllContent-content3" hidden={tab !== 3}>
          <p>tab3</p>
        </div>
       </div>

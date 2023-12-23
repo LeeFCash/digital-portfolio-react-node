@@ -2,7 +2,10 @@
   display:grid;
   grid-template-columns: 10% 10% 10%;
   gap: 35% 33%;
-  outline: 1%;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  color: white;
   outline-color: white;
 }
 
@@ -21,23 +24,34 @@ body {
 }
 
 .mainAll-tabBarDiv-orderList-tab1 {
-  margin-top: 10%;
+  margin-top: 4%;
   height: 75%;
   background-color: white;
   color: black;
+  border-color: white;
+  border-width: 10px;
 }
 
 .mainAll-tabBarDiv-orderList-tab2 {
-  margin-top: 10%;
+  margin-top: 4%;
   height: 75%;
   background-color: white;
   color: black;
+  border-color: white;
+  border-width: 10px;
 }
 
 .mainAll-tabBarDiv-orderList-tab3 {
-  margin-top: 10%;
+  margin-top: 4%;;
   height: 75%;
   background-color: white;
   color: black;
+  border-color: white;
+  border-width: 10px;
+}
 
+.mainAll-overAllContent-content2-meIMG {
+  width: 10%;
+  height: 10%;
+  border-radius: 80%;
 }
