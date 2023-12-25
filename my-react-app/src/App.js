@@ -8,6 +8,7 @@ function App() {
   const testName = 'check the server port 5000';
   function tab1() {
     setTab(1);
+    aboutMeNAE();
   };
   function tab2() {
     setTab(2);
@@ -15,6 +16,18 @@ function App() {
   function tab3() {
     setTab(3);
   };
+  function aboutMeNAE() {
+    console.log('hello');
+    var mainAllOverAllContentContent2DivNAEdiv1 = document.getElementById('mainAll-overAllContent-content2-divNAE-div1');
+    var mainAllOverAllContentContent2DivNAEdiv1 = document.getElementById('mainAll-overAllContent-content2-divNAE-div1');
+    var mainAllOverAllContentContent2DivNAEdiv1 = document.getElementById('mainAll-overAllContent-content2-divNAE-div1');
+    var name = ["L", "e", "e", " ", "C", "a", "s", "h"];
+    var age = ["1", "9"];
+    var education = ["G", "r", "a", "d", "u", "a", "t", "e", "d"];
+    for (var i = 0; i < name.length - 1; i++) {
+      mainAllOverAllContentContent2DivNAEdiv1.innerHTML =+ "<p>" + name[i] + "</p>";
+    }    
+  }
 
 /*useEffect(() => {
   fetch('http://localhost:5000')
@@ -39,9 +52,11 @@ function App() {
        </div>
        <div className="mainAll-overAllContent-content2" id="mainAll-overAllContent-content2" hidden={tab !== 1}>
          <img src={MeIMG} alt="error" className="mainAll-overAllContent-content2-meIMG"/>
-         <p className="mainAll-overAllContent-content2-name">Name:</p>
-         <p className="mainAll-overAllContent-content2-age">age:</p>
-         <p className="mainAll-overAllContent-content2-education">education:</p>
+         <div className="mainAll-overAllContent-content2-divNAE">
+          <p className="mainAll-overAllContent-content2-divNAE-name">Name: </p><div id="mainAll-overAllContent-content2-divNAE-div1"></div>
+          <p className="mainAll-overAllContent-content2-divNAE-age">age: </p><div id="mainAll-overAllContent-content2-divNAE-div2"></div>
+          <p className="mainAll-overAllContent-content2-divNAE-education">education: </p><div id="mainAll-overAllContent-content2-divNAE-div3"></div>
+        </div>
        </div>
        <div className="mainAll-overAllContent-content3" id="mainAll-overAllContent-content3" hidden={tab !== 2}>
          <p>tab2</p>
