@@ -63,3 +63,7 @@ body {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+
+.mainAll-overAllContent-content2-divNAE-div1 {
+  align-items: center;
+}

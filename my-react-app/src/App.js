@@ -19,13 +19,16 @@ function App() {
   function aboutMeNAE() {
     console.log('hello');
     var mainAllOverAllContentContent2DivNAEdiv1 = document.getElementById('mainAll-overAllContent-content2-divNAE-div1');
-    var mainAllOverAllContentContent2DivNAEdiv1 = document.getElementById('mainAll-overAllContent-content2-divNAE-div1');
-    var mainAllOverAllContentContent2DivNAEdiv1 = document.getElementById('mainAll-overAllContent-content2-divNAE-div1');
+    var mainAllOverAllContentContent2DivNAEdiv2 = document.getElementById('mainAll-overAllContent-content2-divNAE-div1');
+    var mainAllOverAllContentContent2DivNAEdiv3 = document.getElementById('mainAll-overAllContent-content2-divNAE-div1');
     var name = ["L", "e", "e", " ", "C", "a", "s", "h"];
     var age = ["1", "9"];
     var education = ["G", "r", "a", "d", "u", "a", "t", "e", "d"];
-    for (var i = 0; i < name.length - 1; i++) {
-      mainAllOverAllContentContent2DivNAEdiv1.innerHTML =+ "<p>" + name[i] + "</p>";
+    for (var i = 0; i < name.length; i++) {
+      mainAllOverAllContentContent2DivNAEdiv1.innerHTML += "<spam className='mainAll-overAllContent-content2-divNAE-div1-Letters'>" + name[i] + "</spam>";
+      //var n = document.createElement('p').innerHTML =+ name[i];
+      //mainAllOverAllContentContent2DivNAEdiv1.appendChild(n);
+      console.log(name[i]);
     }    
   }
 
@@ -53,9 +56,9 @@ function App() {
        <div className="mainAll-overAllContent-content2" id="mainAll-overAllContent-content2" hidden={tab !== 1}>
          <img src={MeIMG} alt="error" className="mainAll-overAllContent-content2-meIMG"/>
          <div className="mainAll-overAllContent-content2-divNAE">
-          <p className="mainAll-overAllContent-content2-divNAE-name">Name: </p><div id="mainAll-overAllContent-content2-divNAE-div1"></div>
-          <p className="mainAll-overAllContent-content2-divNAE-age">age: </p><div id="mainAll-overAllContent-content2-divNAE-div2"></div>
-          <p className="mainAll-overAllContent-content2-divNAE-education">education: </p><div id="mainAll-overAllContent-content2-divNAE-div3"></div>
+          <p className="mainAll-overAllContent-content2-divNAE-name">Name: </p><div className="mainAll-overAllContent-content2-divNAE-div1" id="mainAll-overAllContent-content2-divNAE-div1"></div>
+          <p className="mainAll-overAllContent-content2-divNAE-age">age: </p><div className="mainAll-overAllContent-content2-divNAE-div2" id="mainAll-overAllContent-content2-divNAE-div2"></div>
+          <p className="mainAll-overAllContent-content2-divNAE-education">education: </p><div className="mainAll-overAllContent-content3-divNAE-div1" id="mainAll-overAllContent-content2-divNAE-div3"></div>
         </div>
        </div>
        <div className="mainAll-overAllContent-content3" id="mainAll-overAllContent-content3" hidden={tab !== 2}>
