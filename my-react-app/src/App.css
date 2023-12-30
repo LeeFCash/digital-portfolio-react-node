@@ -1,4 +1,70 @@
 @media (max-width: 1871px) {
+  @keyframes move3 {
+    0% {
+      opacity: 0.0;
+      position: absolute;
+      top: 59vh;
+      left: 31vw;
+      /*font-size: 600px;
+      margin: 1000px;
+      j*/
+  }
+
+    99% {
+        opacity: 1.4;
+        position: absolute;
+        top: 10vh;
+        left: 1%;
+    }
+
+    100% {
+      opacity: 1.5;
+    }
+}
+@keyframes move2 {
+  0% {
+    opacity: 0.0;
+    position: absolute;
+    top: 59vh;
+    left: 31vw;
+    /*font-size: 600px;
+    margin: 1000px;
+    j*/
+}
+
+  99% {
+      opacity: 1.4;
+      position: absolute;
+      top: 4.91vh;
+      left: 1%;
+  }
+
+  100% {
+    opacity: 1.5;
+  }
+}
+@keyframes move1 {
+  0% {
+    opacity: 0.0;
+    position: absolute;
+    top: 59vh;
+    left: 31vw;
+    /*font-size: 600px;
+    margin: 1000px;
+    j*/
+}
+
+  99% {
+      opacity: 1.4;
+      position: absolute;
+      top: 1%;
+      left: 1%;
+  }
+
+  100% {
+    opacity: 1.5;
+  }
+}
   @keyframes IMGresize {
     0% {
         /*transform: scaleX(-1);*/
@@ -63,7 +129,6 @@ body {
   border-color: white;
   border-width: 10px;
 }
-
 .mainAll-tabBarDiv-orderList-tab3 {
   margin-top: 4%;;
   height: 75%;
@@ -72,14 +137,12 @@ body {
   border-color: white;
   border-width: 10px;
 }
-
 .mainAll-overAllContent-content2-meIMG {
   width: 10%;
   height: 10%;
   border-radius: 80%;
   animation: IMGresize 5s ease-in-out forwards;
 }
-
 .mainAll-overAllContent-content2-divNAE {
   position: absolute;
   top: 13%;
@@ -178,5 +241,14 @@ body {
 .main-content-aboutMeContent-text3-letter17-opacity0 {
   opacity: 0.0;
   animation: letterSee 18s ease-out forwards;
+}
+.mainAll-overAllContent-content2-divNAE-name {
+  animation: move1 5s ease-out forwards;
+}
+.mainAll-overAllContent-content2-divNAE-age {
+  animation: move2 5s ease-out forwards;
+}
+.mainAll-overAllContent-content2-divNAE-education {
+  animation: move3 5s ease-out forwards;
 }
 }

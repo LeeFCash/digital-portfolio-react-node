@@ -8,7 +8,7 @@ function App() {
   const testName = 'check the server port 5000';
   function tab1() {
     setTab(1);
-    aboutMeNAE();
+    setTimeout(aboutMeNAE, 6000);
   };
   function tab2() {
     setTab(2);
