@@ -19,17 +19,26 @@ function App() {
   function aboutMeNAE() {
     console.log('hello');
     var mainAllOverAllContentContent2DivNAEdiv1 = document.getElementById('mainAll-overAllContent-content2-divNAE-div1');
-    var mainAllOverAllContentContent2DivNAEdiv2 = document.getElementById('mainAll-overAllContent-content2-divNAE-div1');
-    var mainAllOverAllContentContent2DivNAEdiv3 = document.getElementById('mainAll-overAllContent-content2-divNAE-div1');
+    mainAllOverAllContentContent2DivNAEdiv1.innerHTML = "";
+    var mainAllOverAllContentContent2DivNAEdiv2 = document.getElementById('mainAll-overAllContent-content2-divNAE-div2');
+    mainAllOverAllContentContent2DivNAEdiv2.innerHTML = "";
+    var mainAllOverAllContentContent2DivNAEdiv3 = document.getElementById('mainAll-overAllContent-content2-divNAE-div3');
+    mainAllOverAllContentContent2DivNAEdiv3.innerHTML = "";
     var name = ["L", "e", "e", " ", "C", "a", "s", "h"];
     var age = ["1", "9"];
     var education = ["G", "r", "a", "d", "u", "a", "t", "e", "d"];
     for (var i = 0; i < name.length; i++) {
-      mainAllOverAllContentContent2DivNAEdiv1.innerHTML += "<spam className='mainAll-overAllContent-content2-divNAE-div1-Letters'>" + name[i] + "</spam>";
-      //var n = document.createElement('p').innerHTML =+ name[i];
-      //mainAllOverAllContentContent2DivNAEdiv1.appendChild(n);
+      mainAllOverAllContentContent2DivNAEdiv1.innerHTML += "<spam class='main-content-aboutMeContent-text3-letter" + i + "-opacity0'>" + name[i] + "</spam>";
       console.log(name[i]);
-    }    
+    }
+    for (var i = 0; i < age.length; i++) {
+      mainAllOverAllContentContent2DivNAEdiv2.innerHTML += "<spam class='main-content-aboutMeContent-text3-letter" + i + "-opacity0'>" + age[i] + "</spam>";
+      console.log(name[i]);
+    }
+    for (var i = 0; i < education.length; i++) {
+      mainAllOverAllContentContent2DivNAEdiv3.innerHTML += "<spam class='main-content-aboutMeContent-text3-letter" + i + "-opacity0'>" + education[i] + "</spam>";
+      console.log(name[i]);
+    }
   }
 
 /*useEffect(() => {
@@ -56,9 +65,9 @@ function App() {
        <div className="mainAll-overAllContent-content2" id="mainAll-overAllContent-content2" hidden={tab !== 1}>
          <img src={MeIMG} alt="error" className="mainAll-overAllContent-content2-meIMG"/>
          <div className="mainAll-overAllContent-content2-divNAE">
-          <p className="mainAll-overAllContent-content2-divNAE-name">Name: </p><div className="mainAll-overAllContent-content2-divNAE-div1" id="mainAll-overAllContent-content2-divNAE-div1"></div>
-          <p className="mainAll-overAllContent-content2-divNAE-age">age: </p><div className="mainAll-overAllContent-content2-divNAE-div2" id="mainAll-overAllContent-content2-divNAE-div2"></div>
-          <p className="mainAll-overAllContent-content2-divNAE-education">education: </p><div className="mainAll-overAllContent-content3-divNAE-div1" id="mainAll-overAllContent-content2-divNAE-div3"></div>
+          <div className="NAElinement"><p className="mainAll-overAllContent-content2-divNAE-name">Name: </p><div className="mainAll-overAllContent-content2-divNAE-div1" id="mainAll-overAllContent-content2-divNAE-div1"></div></div>
+          <div className="NAElinement"><p className="mainAll-overAllContent-content2-divNAE-age">age: </p><div className="mainAll-overAllContent-content2-divNAE-div2" id="mainAll-overAllContent-content2-divNAE-div2"></div></div>
+          <div className="NAElinement"><p className="mainAll-overAllContent-content2-divNAE-education">education: </p><div className="mainAll-overAllContent-content2-divNAE-div3" id="mainAll-overAllContent-content2-divNAE-div3"></div></div>
         </div>
        </div>
        <div className="mainAll-overAllContent-content3" id="mainAll-overAllContent-content3" hidden={tab !== 2}>

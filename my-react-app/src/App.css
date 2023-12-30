@@ -1,3 +1,26 @@
+@media (max-width: 1871px) {
+  @keyframes IMGresize {
+    0% {
+        /*transform: scaleX(-1);*/
+        transform: translate(-20vw);
+    }
+
+    60% {
+        border-radius: 0%;
+    }
+
+    100% {
+        border-radius: 99%;
+    }
+}    
+@keyframes letterSee {
+  0% {
+      opacity: 0.0;
+  }
+  100% {
+      opacity: 1.5;
+  }
+}
 .mainAll-tabBarDiv-orderList {
   display:grid;
   grid-template-columns: 10% 10% 10%;
@@ -54,16 +77,106 @@ body {
   width: 10%;
   height: 10%;
   border-radius: 80%;
+  animation: IMGresize 5s ease-in-out forwards;
 }
 
 .mainAll-overAllContent-content2-divNAE {
   position: absolute;
   top: 13%;
   left: 11%;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  /*display: grid;
+  grid-template-columns: 50% 42%;
+  place-items: center;*/
 }
-
+.NAElinement {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+}
+.mainAll-overAllContent-content2-divNAE-div1 {
+  margin-left: 1vw;
+}
+.mainAll-overAllContent-content2-divNAE-div2 {
+  margin-left: 1vw;
+}
+.mainAll-overAllContent-content2-divNAE-div3 {
+  margin-left: 1vw;
+}
 .mainAll-overAllContent-content2-divNAE-div1 {
   align-items: center;
+}
+.main-content-aboutMeContent-text3-letter0-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 1s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter1-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 2s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter2-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 3s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter3-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 4s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter4-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 5s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter5-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 6s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter6-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 7s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter7-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 8s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter8-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 9s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter9-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 10s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter10-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 11s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter11-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 12s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter12-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 13s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter13-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 14s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter14-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 15s ease-out forwards;
+}    
+.main-content-aboutMeContent-text3-letter15-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 16s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter16-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 17s ease-out forwards;
+}
+.main-content-aboutMeContent-text3-letter17-opacity0 {
+  opacity: 0.0;
+  animation: letterSee 18s ease-out forwards;
+}
 }
