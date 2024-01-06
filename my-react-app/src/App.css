@@ -251,4 +251,16 @@ body {
 .mainAll-overAllContent-content2-divNAE-education {
   animation: move3 5s ease-out forwards;
 }
+.mainAll-overAllContent-content2-awardDC.png {
+  width: 5%;
+  height: 5%;
+}
+.mainAll-overAllContent-content2-diploma.jpg {
+  width: 5%;
+  height: 5%;
+}
+.mainAll-overAllContent-content2-rewardTeaching.jpg {
+  width: 5%;
+  height: 5%;
+}
 }

@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import MeIMG from './IMG/MeIMG.jpg'
+import awardDCpng from './IMG/awardDC.png'
+import diplomajpg from './IMG/diploma.jpg'
+import rewardTeachingjpg from './IMG/rewardTeaching.jpg'
 import './App.css';
 
 function App() {
@@ -7,14 +10,32 @@ function App() {
   const [tab, setTab] = useState(0);
   const testName = 'check the server port 5000';
   function tab1() {
+    var mainAllOverAllContentContent2DivNAEdiv1 = document.getElementById('mainAll-overAllContent-content2-divNAE-div1');
+    mainAllOverAllContentContent2DivNAEdiv1.innerHTML = "";
+    var mainAllOverAllContentContent2DivNAEdiv2 = document.getElementById('mainAll-overAllContent-content2-divNAE-div2');
+    mainAllOverAllContentContent2DivNAEdiv2.innerHTML = "";
+    var mainAllOverAllContentContent2DivNAEdiv3 = document.getElementById('mainAll-overAllContent-content2-divNAE-div3');
+    mainAllOverAllContentContent2DivNAEdiv3.innerHTML = "";
+    var mainAllOverAllContentContent2 = document.getElementById("mainAll-overAllContent-content2");
+    var mainAllOverAllContent = document.getElementById("mainAll-overAllContent");
     setTab(1);
-    setTimeout(aboutMeNAE, 6000);
+    mainAllOverAllContentContent2.remove();
+    mainAllOverAllContent.appendChild(mainAllOverAllContentContent2);
+    setTimeout(aboutMeNAE, 5000);
   };
   function tab2() {
+    var mainAllOverAllContent = document.getElementById("mainAll-overAllContent");
+    var mainAllOverAllContentContent2 = document.getElementById("mainAll-overAllContent-content2");
     setTab(2);
+    mainAllOverAllContentContent2.remove();
+    mainAllOverAllContent.appendChild(mainAllOverAllContentContent2);
   };
   function tab3() {
+    var mainAllOverAllContent = document.getElementById("mainAll-overAllContent");
+    var mainAllOverAllContentContent3 = document.getElementById("mainAll-overAllContent-content3");
     setTab(3);
+    mainAllOverAllContentContent3.remove();
+    mainAllOverAllContent.appendChild(mainAllOverAllContentContent3);
   };
   function aboutMeNAE() {
     console.log('hello');
@@ -58,7 +79,7 @@ function App() {
         <button onClick={tab3} className="mainAll-tabBarDiv-orderList-tab3">Contact me</button>
        </ol>
       </div>
-      <div className="mainAll-overAllContent">
+      <div className="mainAll-overAllContent" id="mainAll-overAllContent">
        <div className="mainAll-content1" id="mainAll-overAllContent-content1" hidden={tab !== 0}>
         <h1 className="mainAll-content1-h11">Hello, I'm Lee Cash you can get to know me better by clicking about me, my work sample or contact me.</h1>
        </div>
@@ -68,12 +89,17 @@ function App() {
           <div className="NAElinement"><p className="mainAll-overAllContent-content2-divNAE-name">Name: </p><div className="mainAll-overAllContent-content2-divNAE-div1" id="mainAll-overAllContent-content2-divNAE-div1"></div></div>
           <div className="NAElinement"><p className="mainAll-overAllContent-content2-divNAE-age">age: </p><div className="mainAll-overAllContent-content2-divNAE-div2" id="mainAll-overAllContent-content2-divNAE-div2"></div></div>
           <div className="NAElinement"><p className="mainAll-overAllContent-content2-divNAE-education">education: </p><div className="mainAll-overAllContent-content2-divNAE-div3" id="mainAll-overAllContent-content2-divNAE-div3"></div></div>
+         <div className="mainAll-overAllContent-content2-divIMGandInfo">
+         <img src={diplomajpg} alt="error" className="mainAll-overAllContent-content2-diploma.jpg"/>
+          <img src={awardDCpng} alt="error" className="mainAll-overAllContent-content2-awardDC.png"/>
+          <img src={rewardTeachingjpg} alt="error" className="mainAll-overAllContent-content2-rewardTeaching.jpg"/>
+         </div>
         </div>
        </div>
        <div className="mainAll-overAllContent-content3" id="mainAll-overAllContent-content3" hidden={tab !== 2}>
          <p>tab2</p>
        </div>
-       <div className="mainAll-overAllContent-content4" id="mainAll-overAllContent-content3" hidden={tab !== 3}>
+       <div className="mainAll-overAllContent-content4" id="mainAll-overAllContent-content4" hidden={tab !== 3}>
          <p>tab3</p>
        </div>
       </div>
