@@ -1,4 +1,50 @@
 @media (max-width: 1871px) {
+  @keyframes IMG1 {
+    0% {
+      position: absolute;
+      top: -50vh;
+      left: 0vw;
+      width: 20vw;
+      height: 20vh;
+    }
+    100% {
+      position: absolute;
+      top: 0vh;
+      left: 20vw;
+      width: 20vw;
+      height: 20vh;
+    }
+  }
+  @keyframes IMG2 {
+    0% {
+      position: absolute;
+      top: -10vh;
+      left: 0vw;
+      width: 20vw;
+      height: 20vh;
+    }
+    0% {
+      position: absolute;
+      left: 50vw;
+      width: 20vw;
+      height: 20vh;
+    }
+  }
+  @keyframes IMG3 {
+    0% {
+      position: absolute;
+      top: -10vh;
+      left: 0vw;
+      width: 20vw;
+      height: 20vh;
+    }
+    0% {
+      position: absolute;
+      left: 50vw;
+      width: 20vw;
+      height: 20vh;
+    }
+  }
   @keyframes move3 {
     0% {
       opacity: 0.0;
@@ -147,6 +193,7 @@ body {
   position: absolute;
   top: 13%;
   left: 11%;
+  width: 1vw;
   display: flex;
   flex-direction: column;
   /*display: grid;
@@ -251,16 +298,25 @@ body {
 .mainAll-overAllContent-content2-divNAE-education {
   animation: move3 5s ease-out forwards;
 }
-.mainAll-overAllContent-content2-awardDC.png {
-  width: 5%;
-  height: 5%;
+.mainAll-overAllContent-content2-awardDC {
+  position: absolute;
+  left: 20vw;
+  width: 20vw;
+  height: 20vh;
+  animation: IMG1 5s ease-out forwards;
 }
-.mainAll-overAllContent-content2-diploma.jpg {
-  width: 5%;
-  height: 5%;
+.mainAll-overAllContent-content2-diploma {
+  position: absolute;
+  left: 30vw;
+  width: 20vw;
+  height: 20vh;
+  animation: IMG2 5s ease-out forwards;
 }
-.mainAll-overAllContent-content2-rewardTeaching.jpg {
-  width: 5%;
-  height: 5%;
+.mainAll-overAllContent-content2-rewardTeaching {
+  position: absolute;
+  left: 50vw;
+  width: 20vw;
+  height: 20vh;
+  animation: IMG3 5s ease-out forwards;
 }
 }

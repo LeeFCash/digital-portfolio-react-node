@@ -90,9 +90,9 @@ function App() {
           <div className="NAElinement"><p className="mainAll-overAllContent-content2-divNAE-age">age: </p><div className="mainAll-overAllContent-content2-divNAE-div2" id="mainAll-overAllContent-content2-divNAE-div2"></div></div>
           <div className="NAElinement"><p className="mainAll-overAllContent-content2-divNAE-education">education: </p><div className="mainAll-overAllContent-content2-divNAE-div3" id="mainAll-overAllContent-content2-divNAE-div3"></div></div>
          <div className="mainAll-overAllContent-content2-divIMGandInfo">
-         <img src={diplomajpg} alt="error" className="mainAll-overAllContent-content2-diploma.jpg"/>
-          <img src={awardDCpng} alt="error" className="mainAll-overAllContent-content2-awardDC.png"/>
-          <img src={rewardTeachingjpg} alt="error" className="mainAll-overAllContent-content2-rewardTeaching.jpg"/>
+         <img src={diplomajpg} alt="error" className="mainAll-overAllContent-content2-diploma"/>
+          <img src={awardDCpng} alt="error" className="mainAll-overAllContent-content2-awardDC"/>
+          <img src={rewardTeachingjpg} alt="error" className="mainAll-overAllContent-content2-rewardTeaching"/>
          </div>
         </div>
        </div>
